@@ -1,11 +1,6 @@
 node_modules
-Medis.app
-sign
-Medis.pkg
 .DS_Store
-main.js
-pattern-manager.js
+dist
 npm-debug.log
-*.zip
-out
 *.provisionprofile
+.awcache

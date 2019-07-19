@@ -20,7 +20,7 @@ It also supports many advanced features:
 * Working with millions keys and key members without blocking the redis server
 * Pattern manager for easy selecting a sub group of keys.
 
-**Note**: Medis only supports Redis >= 2.8 version because `SCAN` command was introduced since 2.8. `SCAN` is very useful to get key list without blocking the server, which is crucial to the production environment. Because the latest stable is 3.0 and 2.6 is a very old version, Medis doesn't support it.
+**Note**: Medis only supports Redis >= 2.8 version because `SCAN` command was introduced since 2.8. `SCAN` is very useful to get key list without blocking the server, which is crucial to the production environment. Because the latest stable is 5.0 and 2.6 is a very old version, Medis doesn't support it.
 
 ## Download Medis on Windows
 
@@ -34,17 +34,17 @@ You can download compiled versions of Medis for Mac OS X from [the release page]
 ## Running Locally
 
 1. Install dependencies
-
+```
     $ npm install
-
+```
 2. Compile assets:
-
+```
     $ npm run build
-
+```
 3. Run with Electron:
-
-    $ npm run electron
-
+```
+    $ npm start
+```
 ## Connect to Heroku
 Medis can connect to Heroku Redis addon to manage your data. You just need to call `heroku redis:credentials --app APP` to get your redis credential:
 
